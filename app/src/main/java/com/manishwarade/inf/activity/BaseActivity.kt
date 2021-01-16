@@ -37,8 +37,6 @@ open class BaseActivity : AppCompatActivity() {
             .setMessage(message)
             .setPositiveButton("Ok"
             ) { d, n -> action()
-
-                finish()
             }
             .show()
     }

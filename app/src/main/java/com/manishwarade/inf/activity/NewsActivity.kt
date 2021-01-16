@@ -16,8 +16,7 @@ class NewsActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
         mergeToolbar()
-        initewsFragmentStateAdapter()
-        checkInternet()
+        if(checkInternet())initewsFragmentStateAdapter()
     }
 
     private fun initewsFragmentStateAdapter() {
