@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">InfedisTest</string>
+
+    <string name="str_go_to_link">Go To Link</string>
+
+    <string name="str_launch_app">Launch App</string>
+
+    <string name="str_preview">Preview</string>
 </resources>
