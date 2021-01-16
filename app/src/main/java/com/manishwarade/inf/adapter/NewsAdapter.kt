@@ -45,7 +45,8 @@ class NewsAdapter(private val context: Context): RecyclerView.Adapter<NewsAdapte
 
         fun bind(item: Article) {
 
-            itemView.img_profile.load(item.urlToImage)
+            if(!item.urlToImage.isNullOrEmpty())
+                itemView.img_profile.load(item.urlToImage)
 
             itemView.text_author.setText("Author: ${item.author}")
             itemView.text_publish_date.setText("PublishedAt: ${item.publishedAt}")
