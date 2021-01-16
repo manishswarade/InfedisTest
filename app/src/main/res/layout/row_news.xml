@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/imgCard"
+    style="@style/Widget.MaterialComponents.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_profile"
+            android:src="@drawable/image_not_found"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/defaultTextColor"
+            android:layout_marginTop="6dp"
+            app:layout_constraintLeft_toLeftOf="@id/img_profile"
+            app:layout_constraintTop_toBottomOf="@id/img_profile"
+            android:text="Manish Warade"
+            android:textSize="16sp"
+            android:fontFamily="@font/opensans_semibold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/defaultTextColor_900"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="@id/img_profile"
+            app:layout_constraintTop_toBottomOf="@id/text_author"
+            android:text="Source: CNN"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_semibold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/defaultTextColor_900"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="@id/img_profile"
+            app:layout_constraintTop_toBottomOf="@id/text_source"
+            android:text="Title : Dow Down but Off Lows as Wall Street Scrutinizes Biden Aid Plan - TheStreet"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_regular"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/defaultTextColor_900"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="@id/img_profile"
+            app:layout_constraintTop_toBottomOf="@id/text_title"
+            android:text="Description : Dow Down but Off Lows as Wall Street Scrutinizes Biden Aid Plan - TheStreet"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_regular"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/defaultTextColor_900"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="@id/img_profile"
+            app:layout_constraintTop_toBottomOf="@id/text_description"
+            android:text="Content : Dow Down but Off Lows as Wall Street Scrutinizes Biden Aid Plan - TheStreet"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_regular"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_publish_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/defaultTextColor_900"
+            android:layout_marginTop="12dp"
+            app:layout_constraintLeft_toLeftOf="@id/img_profile"
+            app:layout_constraintTop_toBottomOf="@id/text_content"
+            android:text="Publish At: 02 Jay 2021"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_regular"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_go_to_link"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Go To Link"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            app:fontFamily="@font/opensans_semibold"
+            android:background="@color/colorAccent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:layout_constraintRight_toRightOf="@id/img_profile"
+            app:layout_constraintTop_toBottomOf="@id/text_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

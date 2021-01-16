@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="defaultTextColor_050">#ddd</color>
+    <color name="defaultTextColor_100">#ccc</color>
+    <color name="defaultTextColor_200">#bbb</color>
+    <color name="defaultTextColor_300">#aaa</color>
+    <color name="defaultTextColor_600">#999</color>
+    <color name="defaultTextColor_700">#888</color>
+    <color name="defaultTextColor_800">#777</color>
+    <color name="defaultTextColor_900">#555</color>
+    <color name="defaultTextColor">#222222</color>
+
+    <color name="defaultTextColor_900_800">#666</color>
+</resources>

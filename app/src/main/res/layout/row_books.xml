@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imgCard"
+    style="@style/Widget.MaterialComponents.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_book"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/image_not_found"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="Human-Computer Interaction. Interaction Platforms and Techniques"
+            android:textColor="@color/defaultTextColor"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/img_book"
+            app:layout_constraintTop_toBottomOf="@id/img_book" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="by Manish Warade"
+            android:textColor="@color/defaultTextColor_900"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/img_book"
+            app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Title : Dow Down but Off Lows as Wall Street Scrutinizes Biden Aid Plan - TheStreet"
+            android:textColor="@color/defaultTextColor_900"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/img_book"
+            app:layout_constraintTop_toBottomOf="@id/text_author" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Description : Dow Down but Off Lows as Wall Street Scrutinizes Biden Aid Plan - TheStreet"
+            android:textColor="@color/defaultTextColor_900"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/img_book"
+            app:layout_constraintTop_toBottomOf="@id/text_subtitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_page_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Page Count: 233"
+            android:textColor="@color/defaultTextColor_900"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/img_book"
+            app:layout_constraintTop_toBottomOf="@id/text_description" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_print_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Print Type: BOOK"
+            android:textColor="@color/defaultTextColor_900"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/img_book"
+            app:layout_constraintTop_toBottomOf="@id/text_page_count" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Average Rating: 1"
+            android:textColor="@color/defaultTextColor_900"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/img_book"
+            app:layout_constraintTop_toBottomOf="@id/text_print_type" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_preview_link"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorAccent"
+            android:text="Preview"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:fontFamily="@font/opensans_semibold"
+            app:layout_constraintRight_toRightOf="@id/img_book"
+            app:layout_constraintTop_toBottomOf="@id/text_rating" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_info_linfo"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorAccent"
+            android:text="Info"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:fontFamily="@font/opensans_semibold"
+            android:visibility="gone"
+            app:layout_constraintRight_toLeftOf="@id/btn_preview_link"
+            app:layout_constraintTop_toBottomOf="@id/text_rating" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_chronical_volume"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorAccent"
+            android:text="Volume"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:fontFamily="@font/opensans_semibold"
+            android:visibility="gone"
+            app:layout_constraintRight_toLeftOf="@id/btn_info_linfo"
+            app:layout_constraintTop_toBottomOf="@id/text_rating" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
