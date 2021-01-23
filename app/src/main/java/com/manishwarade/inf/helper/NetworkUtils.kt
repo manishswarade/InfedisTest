@@ -16,7 +16,7 @@ object NetworkUtils {
 
             return activeNetwork != null && activeNetwork.isConnected
 
-        } catch (e: Exception) { /* */
+        } catch (e: Exception) {
             return false
         }
     }
